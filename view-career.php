@@ -44,7 +44,7 @@ $otherJobsResult = mysqli_query($conn, $otherJobsQuery);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Careers - Group Nirmal</title>
     <!-- Base URL -->
-    <base href="/Group Nirmal/">
+    <base href="/Group Nirmal 2.0/">
     <link rel="shortcut icon" href="assets/images/logo/fav.png" type="image/x-icon">
     <!-- Bootstrap CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"

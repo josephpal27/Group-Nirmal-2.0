@@ -39,7 +39,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
     <title><?= htmlspecialchars($blog['meta_title'] ?: $blog['title']) ?> - Nirmal</title>
     <!-- Base URL -->
-    <base href="/Group Nirmal/">
+    <base href="/Group Nirmal 2.0/">
     <!-- Meta Tags -->
     <meta name="title" content="<?= htmlspecialchars($blog['meta_title'] ?: $blog['title']) ?>">
     <meta name="description" content="<?= htmlspecialchars($blog['meta_description']) ?>">
