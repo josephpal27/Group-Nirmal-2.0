@@ -1,0 +1,140 @@
+/* Banner Start */
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+}
+.banner h1{
+    position: absolute;
+    bottom: 4rem;
+    left: 8%;
+    color: #fff;
+    font-size: calc(4rem + 1vw);
+    font-weight: 700;
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .banner h1{
+        bottom: 4rem;
+        font-size: calc(4.7rem + 1vw);
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 767px) {
+    .banner h1{
+        bottom: 0.2rem;
+        left: 1rem;
+        font-size: calc(1.3rem + 0.5vw);
+    }
+}
+/* Banner End */
+
+/* Career Job Container Start */
+.jobs-container {
+    width: 100%;
+    padding: 40px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.jobs-title {
+    font-weight: 600;
+    font-size: 24px;
+    color: #3A739B;
+    margin-bottom: 30px;
+    max-width: 1400px;
+    width: 100%;
+}
+.jobs-header,
+.job-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: start;
+    border-bottom: 1px solid #eee;
+    max-width: 1400px;
+    width: 100%;
+    padding: 24px 0;
+}
+.jobs-header {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+}
+.job-role-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+.job-role-details {
+    font-size: 16px;
+    color: #444;
+}
+.job-posted {
+    font-size: 14px;
+    color: #777;
+    margin-top: 6px;
+}
+.job-button {
+    background-color: #3A739B;
+    color: #fff;
+    padding: 14px 0;
+    width: 95%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.job-button:hover {
+    background-color: #325f7d;
+}
+
+/* For small screens */
+@media screen and (max-width: 767px) {
+    .jobs-container {
+        padding: 1.5rem 1rem;
+    }
+    .jobs-header,
+    .job-row {
+        grid-template-columns: 1fr;
+        text-align: left;
+        padding: 0.5rem 0;
+    }
+    .jobs-title {
+        font-size: calc(1.1rem + 0.5vw);
+        margin-bottom: 0.7rem;
+        padding-bottom: 0.6rem;
+        border-bottom: 2px solid #ccc;
+    }
+    .jobs-header {
+        display: none;
+    }
+    .job-role-title {
+        font-size: calc(1rem + 0.5vw);
+    }
+    .job-role-details {
+        font-size: calc(0.9rem + 0.5vw);
+        font-weight: 450;
+    }
+    .job-posted {
+        font-size: calc(0.9rem + 0.5vw);
+        font-weight: 450;
+        margin-bottom: 5px;
+    }
+    .job-button {
+        margin-top: 13px;
+        margin-bottom: 1rem;
+        width: 100%;
+        font-size: calc(0.95rem + 0.5vw);
+        font-weight: 600;
+        padding: 0.7rem 0;
+    }
+}
+/* Career Job Container End */

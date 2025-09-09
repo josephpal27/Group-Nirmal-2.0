@@ -1,0 +1,545 @@
+/* Banner Start */
+.banner{
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+}
+.banner-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #072137b3;
+}
+.banner-content{
+    width: 70%;
+    position: absolute;
+    bottom: 3rem;
+    left: 8%;
+    color: #fff;
+}
+.banner-content h1{
+    font-weight: 650;
+    font-size: calc(4rem + 1vw);
+}
+.banner-content p{
+    font-weight: 500;
+    font-size: calc(0.55rem + 0.5vw);
+    margin-top: 0.8rem;
+}
+
+/* For small screens */
+@media screen and (max-width: 767px) {
+    .banner-content{
+        width: 100%;
+        position: relative;
+        bottom: 0.2rem;
+        left: 0;
+        padding: 0 1rem;
+    }
+    .banner-content h1{
+        font-size: calc(1.3rem + 0.5vw);
+        margin-top: 1.2rem;
+    }
+    .banner-content p{
+        font-size: calc(0.7rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+}
+/* Banner End */
+
+/* Products Start */
+.products{
+    padding: 1.5rem 1rem;
+    margin: 3rem 8%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 10px;
+    border-radius: 5px;
+}
+.products h2{
+    text-align: center;
+    color: #1d5179;
+    font-weight: 700;
+    font-size: calc(1.7rem + 0.5vw);
+}
+.product-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.product-row .product-card{
+    width: 32%;
+    cursor: pointer;
+    padding: 1rem;
+}
+.product-row .product-card img{
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+.product-row .product-card img:hover{
+    scale: 1.02;
+}
+.product-row .product-card .card-desc{
+    padding: 2rem 0 0 0;
+    text-align: center;
+}
+.product-row .product-card .card-desc span{
+    color: #1d5179;
+    font-weight: 700;
+    font-size: calc(0.9rem + 0.5vw);
+}
+.product-row .product-card .card-desc p{
+    color: #000;
+    font-weight: 500;
+    font-size: calc(0.45rem + 0.5vw);
+    margin-top: 0.7rem;
+}
+.product-row .product-card .card-desc button{
+    margin-top: 0.8rem;
+    background-color: #1d5179;
+    color: #fff;
+    border: none;
+    padding: 0.3rem 0.9rem 0.25rem 0.9rem;
+    font-weight: 450;
+    font-size: calc(0.43rem + 0.5vw);
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+.product-row .product-card .card-desc button:hover{
+    background-color: #0c3e64;
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .products{
+        margin: 3.5rem 8% 3rem 8%;
+    }
+    .product-row .product-card{
+        width: 31%;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .products{
+        margin: 3.7rem 8% 3.5rem 8%;
+        padding: 1.8rem 1.3rem;
+    }
+    .product-row .product-card{
+        width: 31%;
+    }
+    .product-row .product-card .card-desc{
+        padding: 2.5rem 1rem 0.5rem 1rem;
+    }
+    .product-row .product-card .card-desc span{
+        font-size: calc(1rem + 0.5vw);
+    }
+    .product-row .product-card .card-desc p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.9rem;
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 767px) {
+    .products{
+        padding: 1.3rem 0.5rem 1rem 0.5rem;
+        margin: 1.5rem 1rem;
+    }
+    .products h2{
+        font-size: calc(1.4rem + 0.5vw);
+    }
+    .product-row{
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+    .product-row .product-card{
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 0.7rem;
+    }
+    .product-row .product-card .card-desc{
+        padding: 1rem 0 0 0;
+    }
+    .product-row .product-card .card-desc span{
+        font-size: calc(1.1rem + 0.5vw);
+    }
+    .product-row .product-card .card-desc p{
+        font-size: calc(0.7rem + 0.5vw);
+        margin-top: 0.3rem;
+    }
+    .product-row .product-card .card-desc button{
+        margin-top: 0.1rem;
+        padding: 0.3rem 1.2rem;
+        font-size: calc(0.7rem + 0.5vw);
+    }
+}
+/* Products End */
+
+/* Why Choose Us Start */
+.why-choose-us{
+    margin: 0 8%;
+}
+.why-choose-us h3{
+    text-align: center;
+    color: #1d5179;
+    font-weight: 700;
+    font-size: calc(1.7rem + 0.5vw);
+}
+.why-choose-us-row{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.choose-us-card{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.choose-us-card .card-img{
+    min-height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choose-us-card img{
+    width: 33%;
+    height: auto;
+}
+.choose-us-card span{
+    color: #1d5179;
+    font-weight: 700;
+    font-size: calc(0.8rem + 0.5vw);
+    margin-top: 0.5rem;
+}
+.choose-us-card p{
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+    font-size: calc(0.45rem + 0.5vw);
+    margin-top: 0.2rem;
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .why-choose-us-row{
+        margin-top: 2.1rem;
+    }
+    .choose-us-card h2{
+        margin-top: 1rem;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .why-choose-us-row{
+        margin-top: 2.2rem;
+    }
+    .choose-us-card span{
+        font-size: calc(0.95rem + 0.5vw);
+        margin-top: 1.2rem;
+    }
+    .choose-us-card p{
+        font-size: calc(0.55rem + 0.5vw);
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 767px) {
+    .why-choose-us{
+        margin: 2.5rem 1rem 1.5rem 1rem;
+    }
+    .why-choose-us h3{
+        font-size: calc(1.38rem + 0.5vw);
+    }
+    .why-choose-us-row{
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+    }
+    .choose-us-card{
+        width: 48.5%;
+        background-color: #f3f3f3;
+        border-radius: 5px;
+        margin-bottom: 0.7rem;
+        padding: 0 0.3rem;
+    }
+    .choose-us-card .card-img{
+        min-height: 5rem;
+    }
+    .choose-us-card img{
+        width: 25%;
+    }
+    .choose-us-card span{
+        font-size: calc(0.78rem + 0.5vw);
+        margin-top: 0.2rem;
+        text-align: center;
+    }
+    .choose-us-card p{
+        font-size: calc(0.6rem + 0.5vw);
+        margin-top: 0.2rem;
+    }
+}
+/* Why Choose Us End */
+
+/* Partner With Us Start */
+.partner{
+    margin-top: 2rem;
+    height: 60vh;
+    background-image: url('../images/trading/partner-with-us.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+.partner .layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.714);
+}
+.partner h4{
+    text-align: center;
+    color: #1d5179;
+    font-weight: 700;
+    font-size: calc(1.7rem + 0.5vw);
+    text-transform: uppercase;
+}
+.partner p{
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+    font-size: calc(0.5rem + 0.5vw);
+    margin-top: 1.2rem;
+    width: 55%;
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .partner{
+        margin-top: 3rem;
+    }
+    .partner p{
+        font-size: calc(0.57rem + 0.5vw);
+        margin-top: 1.2rem;
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 767px) {
+    .partner{
+        margin-top: 1.5rem;
+        height: auto;
+        padding: 2rem 1rem 1.2rem 1rem;
+    }
+    .partner h4{
+        font-size: calc(1.4rem + 0.5vw);
+    }
+    .partner p{
+        font-size: calc(0.7rem + 0.5vw);
+        margin-top: 0.5rem;
+        width: 93%;
+    }
+}
+/* Partner With Us End */
+
+/* FAQ Start */
+.faq{
+    padding: 4.5rem 8% 5rem 8%;
+}
+.faq h5{
+    font-size: calc(1.9rem + 0.5vw);
+    font-weight: 700;
+    color: #1d5179;
+    text-transform: uppercase;
+    text-align: center;
+}
+.faq p{
+    font-size: calc(0.55rem + 0.5vw);
+    font-weight: 500;
+    color: #000;
+    margin: 0.8rem auto;
+    text-align: center;
+}
+.faq #faqAccordion{
+    margin-top: 2rem;
+    border: 1px solid #e3e9ee;
+    border-radius: 7px;
+}
+.faq .accordion-button {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  font-weight: 700;
+  color: #000;
+  font-size: calc(0.7rem + 0.5vw);
+  padding: 1.3rem 2rem 1.3rem 1.5rem;
+}
+.faq .accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+}
+.faq .accordion-button:focus {
+  box-shadow: none !important;
+}
+.faq .accordion-body {
+  font-size: calc(0.5rem + 0.5vw);
+  font-weight: 500;
+  color: #707070;
+  padding: 0 4rem 1.5rem 1.5rem;
+  border-bottom: 1px solid #e3e9ee;
+}
+
+/* For small screens */
+@media screen and (max-width: 767px) {
+    .faq{
+        padding: 2rem 1rem 3rem 1rem;
+    }
+    .faq h5{
+        font-size: calc(1.3rem + 0.5vw);
+    }
+    .faq p{
+        font-size: calc(0.75rem + 0.5vw);
+        margin: 0.5rem auto;
+        width: 80%;
+    }
+    .faq #faqAccordion{
+        margin-top: 1.2rem;
+    }
+    .faq .accordion-button {
+        font-size: calc(0.75rem + 0.5vw);
+        padding: 0.8rem 0.5rem 0.8rem 0.8rem;
+    }
+    .faq .accordion-button::after{
+        scale: 0.7;
+    }
+    .faq .accordion-body {
+        font-size: calc(0.65rem + 0.5vw);
+        padding: 0 2rem 0.8rem 0.8rem;
+    }
+}
+/* FAQ End */
+
+/* Read More Start */
+.read-more-section {
+    padding: 3rem 8%;
+    background-color: #eeedea;
+    margin-bottom: 1rem;
+}
+.read-more-title {
+    font-size: calc(1.7rem + 0.5vw);
+    font-weight: 700;
+    color: #1c455f;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}
+.read-more-content p {
+    font-size: calc(0.5rem + 0.5vw);
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    color: #555;
+}
+.extra-content {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0.8rem;
+    transition: max-height 0.3s ease;
+}
+.extra-content.show {
+    max-height: 100vh;
+}
+.read-more-btn {
+    margin-top: 1rem;
+    padding: 0.4rem 1.2rem;
+    background-color: #1c455f;
+    color: #fff;
+    font-size: calc(0.5rem + 0.5vw);
+    font-weight: 600;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.read-more-btn:hover {
+    background-color: #103044;
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .read-more-section {
+        padding: 3.5rem 8%;
+    }
+    .read-more-title {
+        font-size: calc(1.8rem + 0.5vw);
+        margin-bottom: 1.3rem;
+    }
+    .read-more-content p {
+        font-size: calc(0.6rem + 0.5vw);
+        margin-bottom: 0.9rem;
+    }
+    .extra-content {
+        margin-top: 0.9rem;
+    }
+    .read-more-btn {
+        margin-top: 1.1rem;
+        padding: 0.45rem 1.2rem;
+        font-size: calc(0.6rem + 0.5vw);
+    }
+}
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .read-more-section {
+        padding: 4rem 8%;
+    }
+    .read-more-title {
+        font-size: calc(1.9rem + 0.5vw);
+        margin-bottom: 1.35rem;
+    }
+    .read-more-content p {
+        font-size: calc(0.65rem + 0.5vw);
+        margin-bottom: 0.95rem;
+    }
+    .extra-content {
+        margin-top: 0.95rem;
+    }
+    .read-more-btn {
+        margin-top: 1.2rem;
+        padding: 0.45rem 1.2rem;
+        font-size: calc(0.65rem + 0.5vw);
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 767px) {
+    .read-more-section {
+        padding: 1rem 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .read-more-title {
+        font-size: calc(1.1rem + 0.5vw);
+        margin-bottom: 0.7rem;
+    }
+    .read-more-content p {
+        font-size: calc(0.7rem + 0.5vw);
+        margin-bottom: 0.8rem;
+    }
+    .extra-content.show {
+        max-height: 200vh;
+    }
+    .read-more-btn {
+        margin-top: 0.7rem;
+        padding: 0.3rem 1.2rem;
+        font-size: calc(0.65rem + 0.5vw);
+    }
+}
+/* Read More End */
